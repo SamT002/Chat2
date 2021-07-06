@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wall"
+    tools:context=".registration.NumberActivity">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_chatapp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/numberImage"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_height="300dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numberButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="@string/signUp"
+        android:onClick="NumberClicked"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_icon"
+        android:hint="@string/number"
+        android:textColor="@color/design_default_color_primary"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:ems="10"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/code"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_input"
+        android:hint="@string/code"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:ems="10"
+        android:drawablePadding="10dp"/>
+
+</LinearLayout>
